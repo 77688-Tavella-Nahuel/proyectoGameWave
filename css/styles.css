@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+25&display=swap');
+
+*{
+    font-family: "Iceland", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#ffffff;
+}
+
+/*Para los HR*/
+.seccion-con-linea {
+    background-color: #041e49e8; /* Color de fondo deseado */
+}
+hr{
+    border: none; /* Quitamos el borde por defecto */
+    height: 8px; /* Ajustamos la altura de la línea */
+    background-color: #171D25; /* Cambiamos el color de fondo de la línea */
+    width: 70%; /* Ancho deseado para la línea */
+    margin: 0 auto; /* Centrar la línea horizontalmente */
+}
+
+/*Header and Footer*/
+
+.header{
+    background-color:#171D25;
+    padding: 10px;
+    overflow: hidden;
+    height: 10vh;
+}
+
+.footer{
+    background-color:#171D25;
+    padding-top: 20px; /* Relleno de 20px en la parte superior */
+    padding-bottom: 20px; /* Relleno de 20px en la parte inferior */
+    padding-left: 0; /* Sin relleno en el lado izquierdo */
+    padding-right: 0; /* Sin relleno en el lado derecho */
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconoPrincipal{
+    margin-left: 30px;
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items:center;
+    
+}
+.iconoPrincipal img{
+    margin-right: 10px;
+    opacity: 0.8; /* Reduce la opacidad de la imagen al 80% */
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3); /* Agrega una sombra ligera */
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+.animacionIcono:hover, .animacionIconoFooter:hover img{
+    transform: scale(1.06); /* Aumenta el tamaño del span al 110% */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.navegacion {
+    display: flex; /* Convertir el nav en un contenedor flexbox */
+    align-items:center; /* Centra verticalmente los elementos dentro del nav */
+    height: 100%;
+}
+
+.listaNav {
+    list-style-type: none; /* Quita los puntos de la lista */
+    display: flex; /* Convierte la lista en un contenedor flexbox */
+    /*margin-left: 1000px;*/
+    align-items: center;
+    justify-content: flex-end;
+    position:absolute;
+    left: 67%;
+    top: 4%;
+}
+
+.linkNav{
+    margin-left: 50px; /* Espacio entre los elementos de la lista */
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+}
+
+.listaNavFooter{
+    list-style-type: none; /* Quita los puntos de la lista */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 300px;
+}
+.linkNavFooter{
+    text-align: center;
+    margin-left: 40px; /* Espacio entre los elementos de la lista */
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 0.5rem 6rem;
+    /* Agregar efecto de botón presionado */
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+}
+.iconoSecundario{
+    margin-left: 390px;
+    filter:invert();
+}
+
+/*--------------------------------------------------------*/
+
+/*Seccion principal*/
+
+.seccionPrincipal {
+    position: relative; /* Establece la posición relativa para que los elementos internos puedan ser posicionados relativamente a este contenedor */
+    overflow: hidden; /* Evita que el video se desborde del contenedor */
+    height: 90vh;
+    background-size: cover;
+    background: linear-gradient(to bottom, #0000009a, #0000009a);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.seccionPrincipal video {
+    position: absolute; /* Establece la posición absoluta para el video */
+    top: 0; /* Coloca el video en la parte superior */
+    left: 0; /* Coloca el video en la parte izquierda */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
+    z-index: -1; /* Coloca el video detrás de los demás elementos */
+}
+.h1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    font-size: 100PX;
+    
+}
+.tituloSecundario{
+    font-size: 70PX;
+    font-weight: 200;
+}
+.registrarseSeccion {
+    display: flex;
+    justify-content: center;
+    bottom: 25%; /* Ajusta la posición vertical desde la parte inferior */
+    text-align: center;
+    color: white; /* Cambia el color del texto a blanco */
+    background-color: #041e49e8; /* Cambia el color de fondo */
+    padding: 15px 25px; /* Añade espacio alrededor del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 25px; /* Añade esquinas redondeadas */
+    font-size: 30px;
+    transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave */
+    position: absolute;
+    left: 45.1%;
+    height: 7vh;
+    width: 10%;
+    &:hover {
+        background-color: #171D25; /* Cambia el color de fondo al pasar el mouse */
+        transform: scale(0.9);
+    }
+}
+/*----------------Seccion 2-------------*/
+.seccion2,.seccion3,.seccion4{
+    background-color: #041e49e8;
+}
+
+.seccion2{
+    padding: 20px;
+    height: 45vh;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.botonBuscar {
+    background-color: #171D25;
+    border-radius: 20px; /* Redondear los bordes de los inputs */
+    padding: 10px 20px; /* Añadir espacio interno */
+    margin: 0 10px; /* Espacio entre los inputs */
+    font-size: 30px; /* Ajustar el tamaño de la fuente */
+    &:hover {
+        background-color: #171D25; /* Cambia el color de fondo al pasar el mouse */
+        transform: scale(0.9);
+    }
+}
+
+.inputBuscador{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 550px;
+}
+.inputs{
+    margin-top: 20px;
+}
+
+/*---------------------Seccion 3--------------*/
+.seccion3{
+    height: 100vh;
+    font-size: 35px;
+    text-align: center;
+    margin: 0; /* Elimina el margen exterior */
+    padding: 120px;
+    padding-right:310px;
+    background-color: #041e49e8; /* Cambia el color de fondo */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+.contenido{
+    overflow: hidden;
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.imagenesContenido img{
+    height: 210px;
+    width: 350px;
+}
+.opcionesVer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Seccion 4*/
+
+.seccion4{
+    height: 35vh;
+    font-size: 35px;
+    text-align: center;
+    margin: 0; /* Elimina el margen exterior */
+    padding: 20px;
+    padding-left: 200px;
+    padding-right:310px;
+    background-color: #041e49e8; /* Cambia el color de fondo */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+.divOfertas{
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagenesOferta img{
+    height: 180px;
+    width: 330px;
+}
+
+/*-----------------Detalle---------------------*/
+.seccionPrincipalDetalle{
+    background-image: url(../assets/img/detalle/csgo.jpg);
+    background-size: cover;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 65vh; /* Ocupa todo el alto del contenedor */
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar{
+    text-align: center;
+}
+.divDetalle{
+    padding: 50px;
+}
+.divDetalle2{
+    padding: 25px;
+}
+
+.seccionVideoDetalle{
+    background-color: #041e49e8;
+    padding: 50px;
+    display: flex;
+    padding-left: 300px;
+}
+.info{
+    padding: 50px;
+    padding-left: 300px;
+}
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameWave</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion"> 
+            <a href="#" class="iconoPrincipal animacionIcono">
+                <img src="https://img.freepik.com/vector-gratis/
+                consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg?size=338&ext=jpg&ga=GA1.1.1488620777.1713052800&semt=sph"
+                 alt="Logo" width="100" loading="lazy" >
+                 <span class="spanTitulo">GameWave</span>
+            </a>
+            <ul class="listaNav">
+                <li>
+                    <a href="" class="linkNav">Tendencias</a>
+                </li>
+                <li>
+                    <a href="./pages/registrarse.html" class="linkNav">Registrarse</a>
+                </li>
+                <li>
+                    <a href="./pages/iniciosesion.html" class="linkNav">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="seccionPrincipal">
+            <h1 class="h1">Explora un mundo de juegos</h1>
+            <h2 class="tituloSecundario">Encuentra tus favoritos</h2>
+            <h2 class="tituloSecundario">y</h2>
+            <h2 class="tituloSecundario">descubre últimos lanzamientos</h2>
+            <a href="./pages/registrarse.html" class="registrarseSeccion">Registrarse</a>
+            <video autoplay muted loop>
+                <source src="./assets/video/Video_fondo.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="seccion2">
+            <h2>Que juego desearias buscar?</h2>
+            <div class="inputs">
+                <input type="text" placeholder="Buscar juego..." class="inputBuscador">
+                <input type="submit" value="Buscar" class="botonBuscar">
+            </div>
+        </section>
+        <div class="seccion-con-linea">
+            <hr>
+        </div>
+        <section class="seccion3">
+            <nav class="opcionesVer">
+                <a href="#" class="pestaña" data-categoria="ultimos-lanzamientos">Últimos lanzamientos</a>
+                <a href="#" class="pestaña" data-categoria="mas-populares">Más populares</a>
+                <a href="#" class="pestaña" data-categoria="clasicos">Clásicos</a>
+            </nav>
+            <div id="ultimos-lanzamientos" class="contenido">
+                <a href="./pages/detalle.html" class="imagenesContenido">
+                    <img src="./assets/img/destacados/Screenshot_7.png" alt="Último lanzamiento">
+                </a>
+                <a href="./pages/detalle.html" class="imagenesContenido">
+                    <img src="./assets/img/destacados/Screenshot_8.png" alt="Último lanzamiento">
+                </a>
+                <a href="./pages/detalle.html" class="imagenesContenido">
+                    <img src="./assets/img/destacados/Screenshot_9.png" alt="Último lanzamiento">
+                </a>
+            </div>
+            <div id="mas-populares" class="contenido" style="display: none;">
+                <a href="./pages/detalle.html">
+                    <img src="caratula_mas_popular.jpg" alt="Más popular">
+                </a>
+            </div>
+            <div id="clasicos" class="contenido" style="display: none;">
+                <a href="./pages/detalle.html">
+                    <img src="caratula_clasico.jpg" alt="Clásico">
+                </a>
+            </div>
+        </section> 
+        <div class="seccion-con-linea">
+            <hr>
+        </div>
+        <section class="seccion4">
+            <h2 class="h2Oferta">En oferta!</h2>
+            <div class="divOfertas">
+                <img src="./assets/img/ofertas/Screenshot_3.png" alt="Oferta" class="imagenesOferta">
+                <img src="./assets/img/ofertas/Screenshot_5.png" alt="Oferta" class="imagenesOferta">
+                <img src="./assets/img/ofertas/Screenshot_6.png" alt="Oferta" class="imagenesOferta">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="navegaciona">
+            <ul class="listaNavFooter">
+                <li>
+                    <a href="" class="linkNavFooter">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="" class="linkNavFooter">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="" class="linkNavFooter">Ayuda</a>
+                </li>
+                <li>
+                    <a href="#" class="iconoSecundario animacionIconoFooter">
+                        <img src="./assets/img/íconos/flecha-arriba.png"
+                        alt="Ir arriba" width="40" loading="lazy" >
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
+
